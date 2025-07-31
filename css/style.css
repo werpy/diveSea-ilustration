@@ -1,5 +1,19 @@
 /* Підключення proper.css */
-@import url(/css/proper.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* header section */
 
