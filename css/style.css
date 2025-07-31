@@ -1,0 +1,1300 @@
+/* Підключення proper.css */
+@import url(/css/proper.css);
+
+/* header section */
+
+.header {
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+
+}
+
+.wrapper_header_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 70px 100px 150px 100px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__menu {
+    margin-left: 54px;
+    color: #606060;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav__menu:hover {
+    color: #141416;
+    transition: all 0.6s ease;
+}
+
+.header_logo {
+    cursor: pointer;
+}
+
+.search_bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 57px;
+    padding-left: 23px;
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 15px;
+    background-color: #ededed;
+}
+
+.search_icon {
+    fill: #9d9d9d;
+    cursor: pointer;
+}
+
+.search_input {
+    width: 100%;
+    height: 57px;
+    padding-left: 15px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background-color: #ededed;
+    font-size: 14px;
+}
+
+.search_input::placeholder {
+    color: #c2c3cb;
+}
+
+.search_input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search_input[type="search"]:focus {
+    outline: none;
+}
+
+.nav_menu_btn {
+    width: 200px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 16px;
+    background-color: #141416;
+    cursor: pointer;
+}
+
+.nav_menu_btn:hover {
+    border: 2px solid #141416;
+    background: none;
+    color: #141416;
+    transition: all 0.6s ease;
+
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_text_wrapper {
+    width: 60%;
+    margin-left: 100px;
+}
+
+.line_upper_text {
+    width: 195px;
+    height: 1px;
+    background-color: #201f1f;
+    opacity: 20%;
+    margin-left: 100px;
+}
+
+.header_main_text {
+    font-size: 71px;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+.header_subtitle_text {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #676767;
+}
+
+.change_bonus {
+    color: #141416;
+    font-weight: 600;
+}
+
+.wrapper_btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 23px;
+    margin-bottom: 82px;
+}
+
+.explore_btn {
+    width: 210px;
+    height: 65px;
+    border-radius: 13px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.explore_btn:hover {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.create_nft_btn {
+    width: 160px;
+    height: 65px;
+    border-radius: 13px;
+    border: 2px solid #000000;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    background: none;
+    cursor: pointer;
+}
+
+.create_nft_btn:hover {
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 0.6s ease;
+}
+
+.header_wrapper_statistic {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic_span {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.statistic_description {
+    font-size: 14px;
+    color: #848586;
+}
+
+.dot_picture {
+    float: right;
+    margin-top: -40px;
+}
+
+.first_picture {
+    position: absolute;
+    right: 21%;
+}
+
+.second_picture {
+    position: absolute;
+    top: 380px;
+    right: 1%;
+    max-width: 100%;
+    width: 320px;
+    height: 320px;
+}
+
+.arrow_picture {
+    float: right;
+    margin-right: 50px;
+}
+
+/* slider section */
+
+.slider_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.slider_header {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    opacity: 20%;
+}
+
+.swiper {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.swiper-wrapper {
+    height: 450px;
+}
+
+.swiper_time_remained {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 116px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.time_remained {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 14px;
+    margin-top: 10px;
+    width: 280px;
+    height: 402px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card_header {
+    font-size: 21px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+.card_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.card_divider {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_img {
+    width: 253px;
+    height: 254px;
+}
+
+.card_subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.quantity img {
+    padding-right: 5px;
+}
+
+.place_bid_btn {
+    width: 121px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.place_bid_btn:hover {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.swiper-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.custom-navigation {
+    width: 166px;
+    height: 70px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.custom-navigation button {
+    width: 166px;
+    height: 70px;
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.custom-navigation button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.divider {
+    width: 2px;
+    height: 24px;
+    background-color: #e6e8ec;
+    margin: 0 15px;
+}
+
+/* Collection section */
+
+.collection_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.collection_header {
+    padding-top: 63px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 550;
+    color: #141416;
+}
+
+/* Таблиця за допомогою блоків */
+
+.table_container {
+    margin: 90px auto;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 0fr;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table_header {
+    display: contents;
+    font-size: 17px;
+    background-color: #f5f5f5;
+    color: #93989a;
+    font-weight: 500;
+}
+
+.table_header div,
+.table_row div {
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.table_row {
+    display: contents;
+}
+
+.table_row div {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    height: 110px;
+    padding-right: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.table_row div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.table_row div:last-child::after {
+    display: none;
+}
+
+.table_row:hover {
+    background-color: #f9f9f9;
+}
+
+.collection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.collection img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0;
+}
+
+.collection-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.collection-info .name {
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.collection-info .author {
+    font-size: 17px;
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+.author {
+    margin-right: 20px;
+}
+
+.positive {
+    color: #10c352;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.item_remained {
+    width: 31%;
+    display: flex;
+}
+
+.item_remained {
+    margin-left: 15px;
+}
+
+.table_ethereum_icon {
+    margin-right: 10px;
+}
+
+.explore_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explore_items {
+    margin-right: 190px;
+    display: flex;
+    align-items: center;
+    color: #acadb9;
+    font-size: 18px;
+}
+
+.explore_arrow {
+    fill: #acadb9;
+    margin-left: 10px;
+}
+
+/* Marketplace section */
+
+.marketplace_section {
+    width: 100%;
+    min-height: 1300px;
+    background-color: #f9f9f9;
+}
+
+.marketplace_header {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 550;
+    color: #141416;
+}
+
+.marketplace_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.marketplace_nav_btn {
+    margin-left: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 56px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.marketplace_nav_icon {
+    margin-right: 10px;
+}
+
+.marketplace_nav_btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.marketplace_nav_btn:hover .marketplace_nav_icon {
+    fill: #ffffff;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.first_nav_btn {
+    width: 80px;
+}
+
+.card_list_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.card_list_block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 14px;
+    width: 280px;
+    height: 402px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card_time_remained {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 116px;
+    height: 37px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.time_remained_span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.marketplace_card_img {
+    width: 253px;
+    height: 254px;
+}
+
+.marketplace_card_header {
+    font-size: 21px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+.card_wrapper_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.card_divider_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.marketplace_card_subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.quantity_block {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.quantity_block img {
+    padding-right: 5px;
+}
+
+.place__bid_btn {
+    width: 121px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.place__bid_btn:hover {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.marketplace_explore_wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.marketplace_explore_items {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    color: #acadb9;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.marketplace_explore_arrow {
+    fill: #acadb9;
+    margin-left: 10px;
+}
+
+/* Динамічна секція */
+
+/* Inner collection section */
+
+.inner_collector_section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.inner_collector_divider {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.inner_collector_wrapper {
+    width: 100%;
+    margin-left: 190px;
+}
+
+.inner_collector_header {
+    width: 100%;
+    font-size: 45px;
+    font-weight: 550;
+    color: #141416;
+}
+
+.collector_header_span {
+    color: #c5c5c5;
+}
+
+.check_list_wrapper {
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 45px;
+
+}
+
+.check_list_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.check_list_icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.check_list_point {
+    color: #12141d;
+    opacity: 70%;
+    font-size: 17px;
+}
+
+.check_list_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.check_btn_arrow {
+    fill: #ffffff;
+    margin-left: 10px;
+}
+
+.check_list_btn:hover {
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #f9f9f9;
+    transition: all 0.6s ease;
+}
+
+.check_list_btn:hover .check_btn_arrow {
+    fill: #000000;
+}
+
+.plates_wrapper {
+    margin-right: 190px;
+}
+
+.rotation_block {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 355px;
+    height: 94px;
+    background-color: #ffffff;
+    margin-left: 235px;
+    margin-top: -40px;
+    border-radius: 14px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.circle_mark {
+    width: 10px;
+    height: 10px;
+    background-color: #23262F;
+    border-radius: 100%;
+    margin-top: -10px;
+}
+
+.verified_block {
+    width: 15%;
+}
+
+.verified_png {
+    position: absolute;
+    margin-top: -32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+}
+
+.verified_icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    margin-left: 35px;
+    margin-top: -32px;
+    z-index: 99999;
+}
+
+.rotation_block_header {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price_nft {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.create_time {
+    font-size: 15px;
+    color: #949494;
+}
+
+.rotation_block_span {
+    color: #949494;
+}
+
+.bigger_verified_png {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.best_sellers_block {
+    width: 452px;
+    height: 600px;
+    border-radius: 14px;
+    margin-right: 140px;
+    padding: 26px;
+    background-color: #ffffff;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.best_sellers_header {
+    font-size: 25px;
+    font-weight: 550;
+    color: 23262F;
+}
+
+.artist_list_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.artist_list_block {
+    display: flex;
+    width: 10%;
+}
+
+.artist_list_wrapper img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+.artist_nft {
+    position: absolute;
+}
+
+.number_block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 42px;
+    color: #ffffff;
+    background-color: #23262F;
+    font-size: 14px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.sellers_artist_name {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.sellers_name_block {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.artist_name_span {
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.artist_tag_span {
+    color: #777e90;
+    cursor: pointer;
+}
+
+.sellers_btn_follow {
+    width: 95px;
+    height: 45px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #000000;
+    border: 2px solid #e6e8eC;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+
+.sellers_btn_follow:hover {
+    background-color: #e6e8eC;
+    transition: all 0.6s ease;
+}
+
+.sellers_btn_unfollow {
+    width: 110px;
+    height: 45px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    background: #e6e8eC;
+    cursor: pointer;
+}
+
+.sellers_btn_unfollow:hover {
+    border: none;
+    border: 2px solid #e6e8eC;
+    background-color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.recent_viewed_block {
+    position: absolute;
+    width: 382px;
+    height: 277px;
+    border-radius: 14px;
+    right: 650px;
+    margin-top: -150px;
+    padding: 26px;
+    background-color: #ffffff;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+}
+
+.recent_header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent_viewed_header {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.resent_dot_icon {
+    width: 30px;
+    height: 30px;
+    fill: #cbd5e0;
+    cursor: pointer;
+}
+
+.recent_list_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.recent_list_block {
+    display: flex;
+    width: 10%;
+}
+
+.recent_list_wrapper .recent_artist_nft {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+.recent_number_block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 42px;
+    margin-top: 40px;
+    color: #141416;
+    font-weight: 800;
+    background-color: #ffffff;
+    font-size: 14px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.recent_artist_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent_name_block {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.recent_name_span {
+    font-size: 17px;
+    font-weight: 550;
+    color: #141416;
+}
+
+.recent_tag_span {
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.recent_price_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent_price_divider {
+    display: flex;
+}
+
+.recent_price_icon {
+    margin-right: 9px;
+    width: 13px;
+    height: 23px;
+}
+
+.recent_price_nft {
+    font-weight: 600;
+}
+
+.recent_price_fluctuation {
+    margin-top: 5px;
+}
+
+.upper_fluctuation {
+    color: #10c352;
+}
+
+.down_fluctuation {
+    color: #e23333;
+}
+
+.plates_arrow_picture {
+    position: absolute;
+    right: 40px;
+    margin-top: 30px;
+}
+
+/* Створення свого власного нфт */
+
+.create_nft_section {
+    width: 100%;
+    height: 80vh;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.create_nft_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    min-height: 411px;
+    margin: 0 auto;
+    padding: 0px 66px 16px 30px;
+    background-color: #141416;
+    border-radius: 30px;
+}
+
+.create_nft_info {
+    width: 50%;
+    height: auto;
+}
+
+.create_nft_header {
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.create_nft_subtitle {
+    font-size: 22px;
+    color: #d4d4d4;
+    opacity: 60%;
+}
+
+.create_nft_btns {
+    display: flex;
+    justify-content: flex-start;
+    /* Вирівнювання кнопок по вертикалі вниз */
+    align-items: flex-end;
+    /* Вирівнювання кнопок горизонтально (опційно) */
+    height: 190px;
+}
+
+.create_explore_btn {
+    width: 183px;
+    height: 67px;
+    margin-right: 31px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.create_explore_btn:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #141416;
+    transition: all 0.6s ease;
+}
+
+.create_sell_btn {
+    width: 183px;
+    height: 67px;
+    font-size: 18px;
+    font-weight: 550;
+    color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    background-color: #141416;
+    cursor: pointer;
+}
+
+.create_sell_btn:hover {
+    color: #000000;
+    border: none;
+    background-color: #ffffff;
+    transition: all 0.8s ease;
+}
+
+.create_nft_png {
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient( #afc7cb, #eec2a9);
+    box-shadow: 10px 20px 100px rgba(158, 216, 218, 0.4), /* М'яка тінь з фіолетовим відтінком */
+                0px 0px 30px rgba(118, 176, 188),
+                10px 10px 15px rgba(227, 160, 123),
+                5px 10px 30px rgba(227, 160, 123);
+    width: 469px;
+    height: 340px;
+}
+
+/* Футер сайту */
+.home_footer {
+    width: 100%;
+    height: 50vh;
+    padding: 122px 0px 81px 0px;
+    background-color: #141416;
+}
+
+.footer_nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 90px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #818181;
+}
+
+.footer_logo {
+    cursor: pointer;
+}
+
+.footer_header {
+    font-size: 35px;
+    color: #ffffff;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.footer_nav {
+    font-size: 20px;
+    color: #b9b9b9;
+    margin-left: 70px;
+}
+
+.footer_nav:hover {
+    color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.footer_social_media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 90px;
+    margin: 65px auto;
+}
+
+.license {
+    font-size: 19px;
+    color: #999999;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.license:hover {
+    color: #ffffff;
+    transition: all 0.6s ease;
+}
+
+.media_logo {
+    width: 35px;
+    height: 35px;
+    fill: #535353;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.media_logo:hover {
+    fill: #ffffff;
+    transition: all 0.6s ease;
+}
