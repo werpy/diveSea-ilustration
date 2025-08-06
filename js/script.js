@@ -77,15 +77,3 @@ function toggleSection() {
 
 // Викликаємо функцію
 toggleSection();
-
-
-
-
-
-
-
-
-
-
-
-
