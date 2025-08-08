@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* header section */
 
 .header {
@@ -1411,7 +1416,15 @@ a {
 }
 
 /* === 981px і менше === */
-@media (mix-width: 981px) {}
+@media (min-width: 981px) {
+  .collection_header_spans {
+    display: none;
+  }
+
+  .collection_item {
+    display: none;
+  }
+}
 
 @media (max-width: 981px) {
   .table_container {

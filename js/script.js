@@ -1,22 +1,38 @@
-'use strict'
+'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Ініціалізація Swiper
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 'auto',
+    slidesPerView: 1, // базове значення для мобільних
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 5000, // Інтервал між прокручуванням (в мілісекундах)
-      disableOnInteraction: false, // Автоплей не зупиняється після взаємодії користувача
+      delay: 5000,
+      disableOnInteraction: false,
     },
+    breakpoints: {
+      470: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1440: {
+        slidesPerView: 5,
+      },
+      1920: {
+        slidesPerView: 6,
+      }
+    }
   });
 
-  // Знаходимо кастомні кнопки
+  // Кастомні кнопки
   const customPrev = document.querySelector('.custom-prev');
   const customNext = document.querySelector('.custom-next');
 
-  // Прив'язка подій до кнопок
   if (customPrev && customNext) {
     customPrev.addEventListener('click', () => {
       swiper.slidePrev();
@@ -28,22 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.error('Custom navigation buttons not found in DOM.');
   }
+
+  // Бургер-меню
+  const burgerBtn = document.querySelector('.burger_btn');
+  const burgerMenu = document.querySelector('.burger_menu_overlay');
+  const burgerClose = document.querySelector('.burger_close');
+
+  if (burgerBtn && burgerMenu && burgerClose) {
+    burgerBtn.addEventListener('click', () => {
+      burgerMenu.classList.add('active');
+      document.body.style.overflow = 'hidden'; // блокуємо скрол
+    });
+
+    burgerClose.addEventListener('click', () => {
+      burgerMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  const burgerBtn = document.querySelector(".burger_btn");
-  const burgerMenu = document.querySelector(".burger_menu_overlay");
-  const burgerClose = document.querySelector(".burger_close");
-
-  burgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.add("active");
-    document.body.style.overflow = "hidden"; // заблокуємо скрол
-  });
-
-  burgerClose.addEventListener("click", () => {
-    burgerMenu.classList.remove("active");
-    document.body.style.overflow = "";
-  });
-});
-
-
