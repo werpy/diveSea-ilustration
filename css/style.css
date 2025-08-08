@@ -565,9 +565,8 @@ a {
 .explore_wrapper {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding-left: 100px;
-  padding-right: 190px;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .explore_items {
@@ -860,7 +859,7 @@ a {
   width: 80%;
   min-height: 411px;
   margin: 0 auto;
-  padding: 0px 66px 16px 30px;
+  padding: 0px 30px 16px 30px;
   background-color: #141416;
   border-radius: 30px;
 }
@@ -960,6 +959,12 @@ a {
 .footer_header_block {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer_header_wrapper {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1099,7 +1104,7 @@ a {
 }
 
 @media (max-width: 1430px) {
-  
+
   .nav_menu {
     display: none;
   }
@@ -1150,113 +1155,124 @@ a {
   }
 
   /* Overlay menu */
-.burger_menu_overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 999;
-  display: none;
-  flex-direction: column;
-  padding: 20px;
-  animation: fadeIn 0.3s ease;
-}
+  .burger_menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+  }
 
-.burger_menu_overlay.active {
-  display: flex;
-}
+  .burger_menu_overlay.active {
+    display: flex;
+  }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
 
-.burger_menu_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #cbcbcb;
-  height: 70px;
-}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-.burger_logo_wrap {
-  display: flex;
-  align-items: center;
-}
+  .burger_menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cbcbcb;
+    height: 70px;
+  }
 
-.burger_logo_icon {
-  width: 50px;
-  height: 50px;
-}
+  .burger_logo_wrap {
+    display: flex;
+    align-items: center;
+  }
 
-.burger_logo_text {
-  margin-left: 10px;
-  font-size: 24px;
-}
+  .burger_logo_icon {
+    width: 50px;
+    height: 50px;
+  }
 
-.burger_close {
-  width: 30px;               /* загальна ширина хрестика */
-  height: 30px;              /* висота */
-  position: relative;
-  cursor: pointer;
-}
+  .burger_logo_text {
+    margin-left: 10px;
+    font-size: 24px;
+  }
 
-.burger_close span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 3px;               /* товщина ліній */
-  background-color: #282828;
-  border-radius: 2px;
-}
+  .burger_close {
+    width: 30px;
+    /* загальна ширина хрестика */
+    height: 30px;
+    /* висота */
+    position: relative;
+    cursor: pointer;
+  }
 
-.burger_close span:first-child {
-  transform: translate(-50%, -50%) rotate(45deg) scaleX(0.8); /* вужчий */
-}
+  .burger_close span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    /* товщина ліній */
+    background-color: #282828;
+    border-radius: 2px;
+  }
 
-.burger_close span:last-child {
-  transform: translate(-50%, -50%) rotate(-45deg) scaleX(0.8);
-}
+  .burger_close span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(0.8);
+    /* вужчий */
+  }
 
-.burger_menu_links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding-top: 15px;
-  border-top: 1px solid #cbcbcb;
-}
+  .burger_close span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg) scaleX(0.8);
+  }
 
-.burger_menu_links a {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: #606060;
-  text-decoration: none;
-}
+  .burger_menu_links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #cbcbcb;
+  }
 
-.burger_menu_links a:hover {
-  color: #141416;
-}
+  .burger_menu_links a {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #606060;
+    text-decoration: none;
+  }
 
-.burger_search_bar {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 57px;
-  padding-left: 20px;
-  margin-top: 20px;
-  border-radius: 15px;
-  background-color: #ededed;
-}
+  .burger_menu_links a:hover {
+    color: #141416;
+  }
 
-.burger_wallet_btn {
-  margin-top: 20px;
-  width: 100%;
-}
+  .burger_search_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 57px;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #ededed;
+  }
+
+  .burger_wallet_btn {
+    margin-top: 20px;
+    width: 100%;
+  }
 
 }
 
@@ -1279,9 +1295,7 @@ a {
     height: 57px;
   }
 
-  .create_nft_png {
-    
-  }
+  .create_nft_png {}
 }
 
 @media (max-width: 1300px) {
@@ -1357,8 +1371,10 @@ a {
     align-items: center;
     text-align: center;
     position: relative;
-    min-height: 100vh; /* щоб було куди кнопці "стати" */
-    padding-bottom: 80px; /* щоб не впиралася в край */
+    min-height: 100vh;
+    /* щоб було куди кнопці "стати" */
+    padding-bottom: 80px;
+    /* щоб не впиралася в край */
   }
 
   .inner_pictures_wrapper {
@@ -1395,30 +1411,182 @@ a {
 }
 
 /* === 981px і менше === */
-@media (mix-width: 981px) {
-
-}
+@media (mix-width: 981px) {}
 
 @media (max-width: 981px) {
   .table_container {
     display: none;
   }
 
-  
-}
+  .collection_section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
+  .top_collection_spans {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .top_collection_spans h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 24px;
+    text-align: center;
+    color: #111;
+  }
+
+  .collection_header_spans {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    margin-top: 50px;
+  }
+
+  .collection_item {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding: 0 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .collection_item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .collection_info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .avatar_container {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .avatar_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .rank {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    background: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #444;
+    border: 2px solid #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .text_info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+  }
+
+  .text_info p {
+    margin: 4px 0 0 0;
+    font-size: 15px;
+    color: #777;
+  }
+
+  .volume_info {
+    text-align: right;
+    min-width: 90px;
+  }
+
+  .volume_value {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    color: #111;
+  }
+
+  .volume_change {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .volume_change.positive {
+    color: #28a745;
+  }
+
+  .volume_change.negative {
+    color: #dc3545;
+  }
+
+  .explore_all {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .explore_all a {
+    font-weight: 600;
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+  }
+
+  .explore_all a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+}
 
 @media (max-width: 970px) {
   .create_nft_banner {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-right: 30px;
   }
 
   .create_nft_btns {
-    height: 120px;
+    height: 100px;
+    padding: 0;
   }
+
 }
 
 @media (max-width: 912px) {
@@ -1428,3 +1596,162 @@ a {
   }
 }
 
+@media (min-width: 830px) {
+  .footer_header_media_block {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .footer_social_media i {
+    display: none;
+  }
+
+  .license {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .media_logo {
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: 690px) {}
+
+@media (max-width: 690px) {
+  .footer_header_media_block i {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer_header_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_header_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .best_sellers {
+    height: 400px;
+  }
+
+  .wrapper_header_menu {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header_info_divider {
+    padding-left: 30px;
+  }
+
+  .header_text {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .group_pictures {
+    height: 350px;
+  }
+
+  .marketplace_nav {
+    margin-right: 30px;
+  }
+
+  .marketplace_nav_btn {
+    width: 120px;
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 615px) {
+  .marketplace_nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marketplace_nav_btn {
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .statistic_divider {
+    margin-right: 30px;
+  }
+
+  .create_nft_btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .create_explore_btn {
+    width: 130px;
+    height: 50px;
+  }
+
+  .create_sell_btn {
+    width: 130px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 495px) {
+  .group_pictures {
+    height: 250px;
+  }
+
+  .custom-navigation_header {
+    margin-left: 135px;
+  }
+
+  .create_nft_png {
+    width: 300px;
+  }
+}
+
+@media (max-width: 435px) {
+  .create_nft_header {
+    font-size: 30px;
+  }
+
+  .create_explore_btn {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .create_sell_btn {
+    width: 100px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  .best_sellers {
+    height: 320px;
+  }
+}
+
+@media (max-width: 380px) {
+  .group_pictures {
+    height: 200px;
+  }
+
+  .custom-navigation_header {
+    margin-left: 60px;
+  }
+}
