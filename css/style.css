@@ -424,7 +424,7 @@ a {
 
 .collection_section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f9f9f9;
 }
 
@@ -566,10 +566,11 @@ a {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding-left: 100px;
+  padding-right: 190px;
 }
 
 .explore_items {
-  margin-right: 190px;
   display: flex;
   align-items: center;
   color: #acadb9;
@@ -589,6 +590,7 @@ a {
 /* Marketplace section */
 
 .marketplace_section {
+  padding-top: 50px;
   width: 100%;
   min-height: 1300px;
   background-color: #f9f9f9;
@@ -845,7 +847,8 @@ a {
 
 .create_nft_section {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  padding-bottom: 50px;
   background-color: #f9f9f9;
   padding-top: 50px;
 }
@@ -863,7 +866,11 @@ a {
 }
 
 .create_nft_info {
-  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
   height: auto;
 }
 
@@ -927,14 +934,6 @@ a {
 }
 
 .create_nft_png {
-  border-radius: 30px;
-  overflow: hidden;
-  background: linear-gradient(#afc7cb, #eec2a9);
-  box-shadow: 10px 20px 100px rgba(158, 216, 218, 0.4),
-    /* М'яка тінь з фіолетовим відтінком */
-    0px 0px 30px rgba(118, 176, 188),
-    10px 10px 15px rgba(227, 160, 123),
-    5px 10px 30px rgba(227, 160, 123);
   width: 469px;
   height: 340px;
 }
@@ -942,7 +941,7 @@ a {
 /* Футер сайту */
 .home_footer {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   padding: 122px 0px 81px 0px;
   background-color: #141416;
 }
@@ -958,6 +957,12 @@ a {
   border-bottom: 1px solid #818181;
 }
 
+.footer_header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer_logo {
   cursor: pointer;
 }
@@ -967,6 +972,12 @@ a {
   color: #ffffff;
   margin-right: auto;
   margin-left: 10px;
+}
+
+.footer_nav_block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer_nav {
@@ -1014,6 +1025,12 @@ a {
 
 /* Media requetions */
 
+@media (max-width: 1604px) {
+  .inner_header {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 1530px) {
   .header_text {
     font-size: 68px;
@@ -1022,6 +1039,35 @@ a {
 
   .group_pictures {
     height: 500px;
+  }
+
+  .swiper-slide {
+    width: 250px;
+    height: 402px;
+  }
+
+  .card_img {
+    width: 223px;
+    height: 254px;
+  }
+
+  .place_bid_btn {
+    width: 100px;
+    height: 45px;
+  }
+
+  .collection_header {
+    font-size: 37px;
+  }
+
+  .marketplace_header {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 1492px) {
+  .best_sellers {
+    height: 600px;
   }
 }
 
@@ -1041,3 +1087,344 @@ a {
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 1430px) {
+  .burger_nav_menu {
+    display: none;
+  }
+
+  .burger_menu_overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 1430px) {
+  
+  .nav_menu {
+    display: none;
+  }
+
+  .search_bar {
+    display: none;
+  }
+
+  .nav_menu_btn {
+    display: none;
+  }
+
+  /* Burger menu */
+
+  .burger_nav_menu {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  .burger_nav_icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo_header {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .burger_btn {
+    margin-top: 15px;
+    margin-left: auto;
+    width: 50px;
+    height: 40px;
+  }
+
+  .burger_line {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #282828;
+  }
+
+  /* Overlay menu */
+.burger_menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.burger_menu_overlay.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.burger_menu_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cbcbcb;
+  height: 70px;
+}
+
+.burger_logo_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.burger_logo_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.burger_logo_text {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.burger_close {
+  width: 30px;               /* загальна ширина хрестика */
+  height: 30px;              /* висота */
+  position: relative;
+  cursor: pointer;
+}
+
+.burger_close span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;               /* товщина ліній */
+  background-color: #282828;
+  border-radius: 2px;
+}
+
+.burger_close span:first-child {
+  transform: translate(-50%, -50%) rotate(45deg) scaleX(0.8); /* вужчий */
+}
+
+.burger_close span:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(0.8);
+}
+
+.burger_menu_links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #cbcbcb;
+}
+
+.burger_menu_links a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #606060;
+  text-decoration: none;
+}
+
+.burger_menu_links a:hover {
+  color: #141416;
+}
+
+.burger_search_bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 57px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #ededed;
+}
+
+.burger_wallet_btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+}
+
+@media (max-width: 1400px) {
+  .create_nft_header {
+    font-size: 36px;
+  }
+
+  .create_nft_subtitle {
+    font-size: 18px;
+  }
+
+  .create_explore_btn {
+    width: 170px;
+    height: 57px;
+  }
+
+  .create_sell_btn {
+    width: 170px;
+    height: 57px;
+  }
+
+  .create_nft_png {
+    
+  }
+}
+
+@media (max-width: 1300px) {
+  .header_text {
+    font-size: 53px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  .header_subtitle {
+    font-size: 16px;
+  }
+
+  .group_pictures {
+    height: 450px;
+  }
+
+  .header_explore_btn {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .header_create_btn {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .art_work {
+    font-size: 32px;
+  }
+
+  .creators {
+    font-size: 32px;
+  }
+
+  .collections {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1260px) {
+
+  .header_info_divider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_discover_wrapper {
+    width: 100%;
+  }
+
+  .header_images_slider_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  .group_pictures {
+    max-width: 100%;
+  }
+
+  .check_list_wrapper {
+    display: none;
+  }
+
+  .inner_info_divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh; /* щоб було куди кнопці "стати" */
+    padding-bottom: 80px; /* щоб не впиралася в край */
+  }
+
+  .inner_pictures_wrapper {
+    margin: 20px 0;
+  }
+
+  .check_list_btn {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1240px) {
+  .footer_nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .footer_nav {
+    margin-left: 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1051px) {
+  .create_nft_png {
+    width: 400px;
+  }
+}
+
+/* === 981px і менше === */
+@media (mix-width: 981px) {
+
+}
+
+@media (max-width: 981px) {
+  .table_container {
+    display: none;
+  }
+
+  
+}
+
+
+@media (max-width: 970px) {
+  .create_nft_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 30px;
+  }
+
+  .create_nft_btns {
+    height: 120px;
+  }
+}
+
+@media (max-width: 912px) {
+  .header_images_slider_wrapper {
+    display: flex;
+    justify-content: left;
+  }
+}
+

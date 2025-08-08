@@ -29,18 +29,62 @@
   <header class="header">
     <div class="wrapper_header_menu">
       <div class="nav_menu">
-        <img onclick='window.location.href="index.html"' class="header_logo" src="img/icons/logo.png" alt="Logo">
+        <img onclick='window.location.href="index.html"' class="header_logo" src="img/icons/logo.svg" alt="logo">
         <a href="#" class="nav__menu">Discover</a>
         <a href="#" class="nav__menu">Creators</a>
         <a href="#" class="nav__menu">Sell</a>
-        <a href="#" class="nav__menu">stats</a>
+        <a href="#" class="nav__menu">Stats</a>
       </div>
+
       <div class="search_bar">
         <i class="bx bx-search search_icon"></i>
         <input class="search_input" type="search" placeholder="Search Art Work / Creator">
       </div>
 
       <button class="nav_menu_btn">Connect Wallet</button>
+
+      <!-- Burger Menu (Mobile) -->
+      <div class="burger_nav_menu">
+        <img class="burger_nav_icon" src="/img/icons/logo.svg" alt="logo">
+        <h3 class="logo_header">DiveSea</h3>
+
+        <div class="burger_btn">
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+        </div>
+
+        <div class="menu_underline"></div>
+      </div>
+    </div>
+
+    <!-- FULLSCREEN BURGER MENU -->
+    <div class="burger_menu_overlay">
+      <div class="burger_menu_header">
+        <div class="burger_logo_wrap">
+          <img class="burger_logo_icon" src="/img/icons/logo.svg" alt="logo">
+          <h3 class="burger_logo_text">DiveSea</h3>
+        </div>
+        <div class="burger_close">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="burger_search_bar">
+        <i class="bx bx-search search_icon"></i>
+        <input class="search_input" type="search" placeholder="Search Art Work / Creator">
+      </div>
+
+      <div class="burger_menu_links">
+        <a href="#">Discover</a>
+        <a href="#">Creators</a>
+        <a href="#">Sell</a>
+        <a href="#">Stats</a>
+      </div>
+
+
+      <button class="nav_menu_btn burger_wallet_btn">Connect Wallet</button>
     </div>
 
     <div class="header_info_divider">
@@ -71,7 +115,7 @@
 
       <div class="header_images_slider_wrapper">
         <div class="slider_group_images">
-          <img class="group_pictures" src="img/group_pictures.png" alt="group_pictures">
+          <img class="group_pictures" src="img/group_pictures.svg" alt="group_pictures">
 
           <div class="custom-navigation_header">
             <button class="custom-prev_header">
@@ -304,6 +348,8 @@
 
     </div>
 
+    .
+
     <div class="explore_wrapper">
       <a href="#" class="explore_items">Explore All <i class="bx bx-right-arrow-alt explore_arrow bx-sm"></i></a>
     </div>
@@ -486,7 +532,7 @@
 
       </div>
       <div class="inner_pictures_wrapper">
-        <img class="best_sellers" src="img/best_sellers.png" alt="best_sellers">
+        <img class="best_sellers" src="img/best_sellers.svg" alt="best_sellers">
       </div>
     </div>
   </section>
@@ -501,17 +547,16 @@
           <button class="create_sell_btn">Sell Artwork</button>
         </div>
       </div>
-      <div class="create_nft_block">
-        <img class="create_nft_png" src="img/create_nft_png.png" alt="Create NFT">
-      </div>
+      <img class="create_nft_png" src="img/create_nft_png.svg" alt="Create NFT">
     </div>
   </section>
 
   <footer class="home_footer">
     <div class="footer_nav_menu">
-      <img onclick="window.location.href='index.html'" class="footer_logo" src="img/icons/logo_footer.png"
-        alt="Footer logo">
-      <h2 class="footer_header">DiveSea</h2>
+      <div class="footer_header_block">
+        <img onclick="window.location.href='index.html'" class="footer_logo" src="img/icons/logo_footer.png" alt="Footer logo">
+        <h2 class="footer_header">DiveSea</h2>
+      </div>
 
       <a href="#" class="footer_nav">Privacy Policy</a>
       <a href="#" class="footer_nav">Term & Conditions</a>
