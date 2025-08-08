@@ -3,30 +3,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Ініціалізація Swiper
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 1, // базове значення для мобільних
+    slidesPerView: 'auto', // базове значення для мобільних
     spaceBetween: 20,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
-    breakpoints: {
-      470: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
-      1440: {
-        slidesPerView: 5,
-      },
-      1920: {
-        slidesPerView: 6,
-      }
-    }
+    
   });
 
   // Кастомні кнопки

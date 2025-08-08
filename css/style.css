@@ -379,7 +379,7 @@ html {
   border: 2px solid #000000;
   color: #000000;
   background-color: #ffffff;
-  transition: all 0.6s ease;
+  transition: background 0.6s;
 }
 
 .swiper-navigation {
@@ -1300,7 +1300,6 @@ html {
     height: 57px;
   }
 
-  .create_nft_png {}
 }
 
 @media (max-width: 1300px) {
