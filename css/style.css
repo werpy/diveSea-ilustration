@@ -267,6 +267,46 @@ html {
   background: rgba(0, 0, 0, 0.05);
 }
 
+/* Slider hider */
+
+.slider_group_images {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+}
+
+.group_pictures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.group_pictures.active {
+  opacity: 1;
+}
+
+.custom-navigation_header {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-90%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 50px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 /* slider section */
 
 .slider_section {
@@ -441,7 +481,7 @@ html {
   color: #141416;
 }
 
-/* Таблиця за допомогою блоків */
+/* Block built table */
 
 .table_container {
   margin: 90px auto;
@@ -797,10 +837,13 @@ html {
 }
 
 .inner_header {
-  font-size: 43px;
+
+  font-size: 42px;
 }
 
 .inner_header_span {
+  font-weight: 600;
+  font-size: 42px;
   color: #C5C5C5;
 }
 
@@ -847,7 +890,7 @@ html {
   transition: background 0.6s;
 }
 
-/* Створення свого власного нфт */
+/* Create your own NFT */
 
 .create_nft_section {
   width: 100%;
@@ -893,9 +936,7 @@ html {
 .create_nft_btns {
   display: flex;
   justify-content: flex-start;
-  /* Вирівнювання кнопок по вертикалі вниз */
   align-items: flex-end;
-  /* Вирівнювання кнопок горизонтально (опційно) */
   height: 190px;
 }
 
@@ -915,7 +956,7 @@ html {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: #141416;
-  transition: all 0.6s ease;
+  transition: background 0.6s;
 }
 
 .create_sell_btn {
@@ -942,7 +983,7 @@ html {
   height: 340px;
 }
 
-/* Футер сайту */
+/* Footer */
 .home_footer {
   width: 100%;
   min-height: 50vh;
@@ -1039,6 +1080,10 @@ html {
   .inner_header {
     font-size: 32px;
   }
+
+  .inner_header_span {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 1530px) {
@@ -1133,6 +1178,25 @@ html {
     border-bottom: 1px solid #cbcbcb;
   }
 
+  .burger_nav_menu {
+    position: relative;
+    transition: all 0.3s ease;
+    height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .burger_nav_menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
   .burger_nav_icon {
     width: 70px;
     height: 70px;
@@ -1214,11 +1278,12 @@ html {
   }
 
   .burger_close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
     width: 30px;
-    /* загальна ширина хрестика */
     height: 30px;
-    /* висота */
-    position: relative;
     cursor: pointer;
   }
 
@@ -1228,14 +1293,12 @@ html {
     left: 50%;
     width: 100%;
     height: 3px;
-    /* товщина ліній */
     background-color: #282828;
     border-radius: 2px;
   }
 
   .burger_close span:first-child {
     transform: translate(-50%, -50%) rotate(45deg) scaleX(0.8);
-    /* вужчий */
   }
 
   .burger_close span:last-child {
@@ -1300,6 +1363,12 @@ html {
     height: 57px;
   }
 
+  .custom-navigation_header {
+    left: 10%;
+    transform: translateX(-50%);
+    transform: translateY(-90%);
+
+  }
 }
 
 @media (max-width: 1300px) {
@@ -1376,9 +1445,7 @@ html {
     text-align: center;
     position: relative;
     min-height: 100vh;
-    /* щоб було куди кнопці "стати" */
     padding-bottom: 80px;
-    /* щоб не впиралася в край */
   }
 
   .inner_pictures_wrapper {
@@ -1414,7 +1481,7 @@ html {
   }
 }
 
-/* === 981px і менше === */
+/* === 981px and less === */
 @media (min-width: 981px) {
   .collection_header_spans {
     display: none;
@@ -1630,8 +1697,6 @@ html {
 
 }
 
-@media (min-width: 690px) {}
-
 @media (max-width: 690px) {
   .footer_header_media_block i {
     width: 30px;
@@ -1683,6 +1748,12 @@ html {
     font-size: 12px;
   }
 
+  .custom-navigation_header {
+    left: 0%;
+    top: 70%;
+
+  }
+
 }
 
 @media (max-width: 615px) {
@@ -1696,6 +1767,10 @@ html {
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .marketplace_nav_btn {
+    width: 70%;
   }
 }
 
@@ -1718,6 +1793,47 @@ html {
     width: 130px;
     height: 50px;
   }
+
+  .burger_nav_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo_header {
+    font-size: 26px;
+  }
+
+  .burger_btn {
+    width: 40px;
+    height: 44px;
+  }
+
+  .burger_line {
+    margin-bottom: 10px;
+  }
+
+  .header_text {
+    font-size: 42px;
+  }
+
+  .collection_header {
+    font-size: 32px;
+  }
+
+  .marketplace_header {
+    font-size: 32px;
+  }
+
+  .card_list_block {
+    margin-left: 0;
+    width: 260px;
+  }
+
+  .marketplace_card_img {
+    width: 231px;
+    height: 247px;
+  }
+
 }
 
 @media (max-width: 495px) {
@@ -1731,6 +1847,10 @@ html {
 
   .create_nft_png {
     width: 300px;
+  }
+
+  .custom-navigation_header {
+    top: 70%;
   }
 }
 
@@ -1756,9 +1876,36 @@ html {
   .best_sellers {
     height: 320px;
   }
+
+  .custom-navigation_header {
+    margin-left: 100px;
+  }
 }
 
+@media (max-width: 400px) {
+  .slider_group_images {
+    height: 500px;
+  }
+}
+
+
 @media (max-width: 380px) {
+  .header_subtitle {
+    font-size: 15px;
+  }
+
+  .header_explore_btn {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .header_create_btn {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
+
   .group_pictures {
     height: 200px;
   }
